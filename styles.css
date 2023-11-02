@@ -2,35 +2,126 @@ body{
     align-items: left;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #2a9ca4;
+    background-color: ffff;
 
 }
 
 button{
-    margin-bottom: 20px;
-    font-family: JetBrains Mono;
-
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #4F46E5;
+    color: white; 
 }
 
-button:hover{
-    color: blue;
-}
 
 .bookForm{
-    border-radius: 10px;
-    width: 300px;
     padding: 20px;
+}
+
+.formh1{
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    margin-top: -2px;
 }
 
 form{
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #2e7a80;
+    flex-direction: column;
+    background-color: ffff;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    margin: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 7px 7px 10px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+
+#name {
+    display: flex;
+    border: 1px solid #ababab;
+    width: 400px;
+    height: 34px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    opacity: 70%;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+::placeholder {
+    color: #cbd5e0; /* Equivalent to "text-gray-400" */
+}
+
+#nameholder {
+    font-weight: 500;
+    margin-right: 360px;
+    margin-bottom: 10px;
+}
+
+.epass{
+    display: flex;
+    flex-flow: row nowrap; 
+}
+
+#email {
+    border: 1px solid #ababab;
+    width: 400px;
+    height: 34px;
+    border-radius: 6px;
+    opacity: 70%;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+
+#emailholder {
+    font-weight: 500;
+    margin-right: 240px;
+    margin-bottom: 10px;
+}
+
+#password{
+    display: flex;
+    font-weight: 500;
+    color: #4F46E5;
+}
+
+.submit{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin: 5px;
+    width: 400px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 0px;
+    transition: border-radius 0.3s ease; 
+    background-color: #4F46E5;
+    color: white; 
+    
+}
+
+.submit:hover{
+    border: 50px #736bff;
 
 }
 
+.bspan{
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.stspan{
+    color: #4F46E5
+}
