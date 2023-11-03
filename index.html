@@ -4,32 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900">
     <script rel="script" href="object.js"></script>
     <title>My Library</title>
 </head>  
 <header>
-    <h1>My Library</h1>
-    <h2>Many many books</h2>
+    <div class="navbar">
+        <h1>My Library</h1>
+        <nav>
+            <ul class="navtext">
+                <a href="#" class="nav1">Books</a>
+                <a href="#" class="nav2">About</a>
+                <a href="#" class="nav3">Contact</a>
+            </ul>
+        </nav>
+    </div>      
 </header>
 <body>
     <div>
         <button id="showFormButton" class="button">Show Form</button>
     </div>
     <div class="bookForm">
-        <form id="bookForm"> 
+        <form> 
             <h1 class="formh1">Sign Up</h1>
             <label for="name" id="nameholder">Name</label>
             <input type="text" id="name" name="name">
             <br>
             <div class="epass">
                 <label for="email" id="emailholder">Email</label>
-                <span id="password">Forgot password?</span>
+                <a id="password" href="#">Forgot password?</a>
             </div>
             <input type="email" id="email" name="email">
             <br>
             <input type="submit" class="submit" value="Submit">
-            <span class="bspan">Not a member? <strong class="stspan">Start a 14 day free trial</strong>
-        </form>
+            <div class="member">
+                <span class="bspan">Not a member?</span> <a hfer="#"class="stspan">Start a 14 day free trial</a>
+            </div>
+            </form>
        
     </div>
 <div id="booklist">

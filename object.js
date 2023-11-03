@@ -8,7 +8,6 @@ function Book(name, author, date) {
 }
 
 // Needs work 
-const showFormButton = document.getElementById('showFormButton');
 const bookForm = document.getElementById('bookForm');
 
 showFormButton.addEventListener('click', function() {
