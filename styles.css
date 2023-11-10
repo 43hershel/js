@@ -158,6 +158,7 @@ form textarea {
     transition: border-radius 0.3s ease; 
     background-color: #4F46E5;
     color: white; 
+    margin-top: 10px;
     
 }
 
