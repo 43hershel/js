@@ -1,19 +1,8 @@
-const myLibrary = ["Metamorphosis", "Silmarilion", "Elantris"];
-
-function Book(name, author, date) {
-  // the constructor...
-  this.name = name
-  this.author = author
-  this.date = date 
-}
-
-// Needs work 
-const bookForm = document.getElementById('bookForm');
-
-showFormButton.addEventListener('click', function() {
-    if (bookForm.style.display === 'none' || bookForm.style.display === '') {
-        bookForm.style.display = 'block'; // Show the form
+function myFunction() {
+    var x = document.getElementById("bookForm");
+    if (x.style.display === "none") {
+      x.style.display = "block";
     } else {
-        bookForm.style.display = 'none'; // Hide the form
+      x.style.display = "none";
     }
-});
+  }
